@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(-45deg, #2980b9, #6dd5fa, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+h1{
+  text-align: center;
+
+}
+.actions {
+  text-align: center;
+}
+.ai {
+  background-image: url('./img/ai.jpg');
+}
+.game-board {
+  margin: 50px auto;
+  width: 300px;
+}
+.cell {
+  background-color: white;
+  border: 2px solid black;
+  float: left;
+  height: 96px;
+  width: 96px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1)
+}
+.cell:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.player {
+  background-image: url('./img/player.jpg');
+}
+
+.reset {
+  bottom: 34%;
+  left: 47%;
+  position: absolute;
+  border: 6px solid #cff7db;
+  background-color: #04aa6d;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 50px;
+}
+
+.reset:hover {
+  color: #fff;
+  background-color: #04aa6d;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
